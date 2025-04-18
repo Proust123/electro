@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Electro</title>
+
+    <style>
+        *{
+            margin : 0;
+            padding : 0;
+            box-sizing: border-box;
+            font-family: Montserrat, sans-serif;
+        }
+        .section1{
+            height : max-content;
+            width : 100%;
+            border : 1px solid;
+            padding: 1px;
+        }
+        .sec1_topcontent{
+            height : 2%;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+            background-color: rgb(30,31,41);
+        }
+        .sec1_topconleft{
+            height : 75%;
+            width : 30%;
+            /* border : 1px solid yellow; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 9%;
+        }
+        .sec1topcon{
+            height : 75%;
+            width : 12%;
+            /* border : 1px solid yellow; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        .box4{
+            height : 5% ; 
+            width : 15%;
+            /* border : 1px solid red; */
+            position: absolute;
+            right: 120px;
+        }
+        .box1_icon{
+            height : 90%;
+            width : 5%;
+            /* border : 1px solid red; */
+            display: inline-block;
+        } 
+        .box1_icon2{
+            height : 90%;
+            width : 5%;
+            /* border : 1px solid white; */
+            display: inline-block;
+        }
+        .box1_icon3{
+            height : 90%;
+            width : 5%;
+            /* border : 1px solid white; */
+            display: inline-block;
+        }
+        .sec1_icons{
+            color : rgb(209, 0, 36);
+            font-size: 10px;
+            margin-left: 5px;
+        }
+        .box1_para{
+            font-size: 12px;
+            font-weight: 400;
+            color : white;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 5px;
+        }
+        .box4_icon{
+            height : 90%;
+            width : 15%;
+            /* border : 1px solid white; */
+            display: inline-block;
+        }
+        .box4_para{
+            font-size: 12px;
+            font-weight: 400;
+            color : white;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 5px;
+        }
+        .sec1_icon4{
+            color : rgb(209, 0, 36);
+            font-size: 12px;
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+        .sec1_electrobox{
+            height : 70px;
+            width : 100%;
+            background-color: rgb(21,22,29);
+            border-bottom: 4px solid rgb(209, 0, 36) ;
+            padding: 1px;
+            position: relative;
+        }
+        .sec1electrobox_logo{
+            height : 70%;
+            width : 13%;
+            left: 9%;
+            /* border : 1px solid white; */
+            padding: 1px;
+            top: 10px;
+            display: inline-block;
+            vertical-align: top;
+            position: absolute;
+        }
+        .sec1electrobox_midform{
+            height : 70px;
+            width : 40%;
+            border : 1px solid white;
+            display: inline-block;
+            vertical-align: top;
+           
+            padding: 1px;
+        }
+        .midform_firstbox{
+            height : 39px;
+            width : 25%;
+            border-bottom-left-radius: 25px ;
+            border-top-left-radius: 25px;
+            border-right: 2px solid rgba(0, 0, 0, 0.466);
+            padding: 1px;
+            margin-top: 10px;
+            background-color: white;
+            /* border: 1px solid red; */
+        }
+        .form1{
+            height: 39px;
+            /* margin-left: -5px; */
+            width : 50%;
+            border: transparent;
+            /* border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px; */
+            /* margin-left: -1.5%; */
+            margin-top: -39px; 
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20%;
+            padding: 5px;
+        }
+        .midform_btn{
+            height : 39px;
+            width : 2%;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background-color: rgb(209,0,36);
+            color : white;
+            font-weight: 700;
+            margin-left: 60%;
+            margin-top: -57px;
+            border: transparent;
+            display: inline-block;
+            vertical-align: top;
+            
+        }
+        .midform_secondbox{
+            height : 100%;
+            width : 45%;
+            /* border: 1px solid red; */
+            display: inline-block;  
+            vertical-align: top;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px; 
+            margin-left: -5px;
+        }
+        
+        .sec1electrobox_icons{
+            height : 70%;
+            width : 20%;
+            /* border : 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            /* margin-left: 5%; */
+            top: 20px;
+            position:absolute;
+            right : 0px;
+        }
+        .sec1electroboxicons_box1{
+            height : 100%;
+            width : 30%;
+            /* border : 1px solid white; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec1electroboxicons_icon1{
+            height : 40%;
+            width : 25%;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 34%;
+        }
+        .heart{
+            color : white
+        }
+        .sec1electroboxicons_head1{
+            color : white;
+            font-size: 12px;
+            font-weight: 500;
+            margin-left: 2%;
+        }
+        .sec1electroboxicons_box2{
+            height : 100%;
+            width : 30%;
+            /* border : 1px solid white; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10%;
+        }
+        .sec1electroboxicons_icon2{
+            height : 40%;
+            width : 25%;
+            /* border : 1px solid white; */
+            margin-left: 17%;
+            /* margin-top: -40px; */
+        }
+        .sec1electroboxicons_head2{
+            color : white;
+            font-size: 12px;
+            font-weight: 500;
+            /* margin-left: 45%; */
+            /* margin-top: -30px; */
+        }
+        .list{
+            display: inline;
+            list-style: none;
+            margin-left: 4%;
+        }
+        .list:hover{
+            color :  rgb(209,0,36)
+        }
+        .sec1_navbar{
+            height : 4%;
+            width : 100%;
+            border-bottom : 2px solid rgba(0, 0, 0, 0.418);
+            padding: 1px;
+            position: relative;
+        }
+        .sec1nav_ul{
+            font-size: 15px;
+            font-weight: 500;
+            border : 1px solid white;
+            width: 55%;
+            margin-top: 10px;
+            margin-left: 7%;
+            height : 15%;
+            cursor: pointer;
+            position: absolute;
+        }
+        .list_underline, .list_underline1{
+            height : 2px;
+            width : 35px;
+            background-color:  rgb(209,0,36);
+            position: absolute;
+            margin-left: 4%;
+            margin-top: 2px;
+        }
+
+        
+        .sec1_maincontent{
+            height : 20%;
+            width : 84%;
+            border : 1px solid;
+            padding: 1px;
+            margin-left: 8%;
+            margin-top: 50px;
+            overflow: hidden;
+        }
+        .sec1maincontent_boxes{
+            height : 100%;
+            width : 32%;
+            /* border : 1px solid; */
+            display: inline-block;
+            vertical-align: top;    
+            margin-left: 1%;
+        }
+        .a1{
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .a1:hover{
+            transform: scale(1.1);
+        }
+        .a2{
+            
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .a2:hover{
+            transform: scale(1.1);
+        }
+        .a3{
+            
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: linear;
+        }
+        .a3:hover{
+            transform: scale(1.1);
+        }
+        .img1{
+            height : 92%;
+            width: 92%;
+            margin-top: 10px;
+            z-index: 50;
+        }
+        .a1_name{
+            height : 100%;
+            width : 50%;
+            background-color: rgba(211, 24, 55, 0.842);
+            padding: 1px;
+            margin-top: -210px;
+            z-index: 100;
+        }
+        .a1name_text1{
+            color : white;
+            margin-left: 4%;
+            margin-top: 80px;
+        }
+        .a1name_text2{
+            color : white;
+            margin-left: 4%;
+            margin-top: 15px;
+            display: inline;
+            /* vertical-align: top; */
+            cursor: pointer;
+        }
+        .a1nametext2_icon{
+            height : 8%;
+            width : 8%;
+            border-radius: 50%;
+            background-color: white;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 3px;
+        }
+        .arrow{
+            color: rgba(0, 0, 0, 0.507);
+            font-size: 15px;
+        }
+        .sec1_newproduct{
+            height : 5%;
+            width : 84%;
+            /* border: 1px solid; */
+            padding: 1px;
+            margin-left: 8%;
+            margin-top: 80px;
+            position: relative;
+        }
+        .sec1newproduct_head1{
+            height : 90%;
+            width : 20%;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            position: absolute;
+        }
+        .sec1newproducthead1_text{
+            color :  rgb(43, 45, 66);
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+        .sec1newproduct_head2{
+            height : 90%;
+            width : 35%;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            position: absolute;
+            right : 0px;
+        }
+        .sec1newproducthead2_text1{
+            font-size: 15px ;
+            font-weight: 700;
+            color :  rgb(141, 153, 174);
+            cursor: pointer;
+            display: inline;
+            vertical-align: top;
+            position: absolute;
+            right: 320px;
+            top : 15px
+        }
+        .sec1newproducthead2_text2{
+            font-size: 15px ;
+            font-weight: 700;
+            color :  rgb(141, 153, 174);
+            cursor: pointer;
+            display: inline;
+            vertical-align: top;
+            position: absolute;
+            right: 200px;
+            top : 15px
+        }
+        .sec1newproducthead2_text3{
+            font-size: 15px ;
+            font-weight: 700;
+            color :  rgb(141, 153, 174);
+            cursor: pointer;
+            display: inline;
+            vertical-align: top;
+            position: absolute;
+            right: 110px;
+            top : 15px
+        }
+        .sec1newproducthead2_text4{
+            font-size: 15px ;
+            font-weight: 700;
+            color :  rgb(141, 153, 174);
+            cursor: pointer;
+            display: inline;
+            vertical-align: top;
+            position: absolute;
+            right: 0px;
+            top : 15px
+        }
+        .sec1newproducthead2_ul{
+            margin-top: 15px;
+        }
+        .newlist_line1{
+            height : 2px;
+            width : 50px;
+            background-color:  rgb(209,0,36);
+            position: absolute;
+            left: 6%;
+            top: 20px;
+        }
+        .newlist_line2{
+            height : 2px;
+            width : 50px;
+            background-color:  rgb(209,0,36);
+            position: absolute;
+            left:30%;
+            top: 20px;
+            visibility: hidden;
+            animation-name: line;
+            animation-duration: .3s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+        .sec1newproducthead2_text2:hover .newlist_line2{
+            visibility: visible;
+        }
+        .newlist_line3{
+            height : 2px;
+            width : 50px;
+            background-color:  rgb(209,0,36);
+            position: absolute;
+            left:18%;
+            top: 20px;
+            visibility: hidden;
+            animation-name: line;
+            animation-duration: .3s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+        .sec1newproducthead2_text3:hover .newlist_line3{
+            visibility: visible;
+        }
+        .newlist_line4{
+            height : 2px;
+            width : 50px;
+            background-color:  rgb(209,0,36);
+            position: absolute;
+            left:35%;
+            top: 20px;
+            visibility: hidden;
+            animation-name: line;
+            animation-duration: .3s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+        .sec1newproducthead2_text4:hover .newlist_line4{
+            visibility: visible;
+        }
+        .sec1_slider{
+            height : 600px;
+            width : 84%;
+            /* border : 1px solid; */
+            padding : 1px;
+            margin-left: 8%;
+            margin-top: 30px;
+            overflow: hidden;
+        }
+        .sec1_sliderbox{
+            height : 100%;
+            width : 200%;
+            /* border : 1px solid yellow; */
+            padding: 1px;
+            animation-name: sec1slider;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes sec1slider {
+            0%{
+                margin-left: 0;
+            }
+            20%{
+                margin-left: 0;
+            }
+            21%{
+                margin-left: -25%;
+            }
+            40%{
+                margin-left: -25%;
+            }
+            41%{
+                margin-left: -50%;
+            }
+            60%{
+                margin-left: -50%;
+            }
+            61%{
+                margin-left: -75%;
+            }
+            80%{
+                margin-left: -75%;
+            }
+            81%{
+                margin-left: -100%;
+            }
+            100%{
+                margin-left: -100%;
+            }
+        }
+
+        .sec1sliderbox{
+            height : 100%;
+            width : 49.9%;
+            border : 1px solid red;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .sec1sliderbox_info{
+            height : 90%;
+            width : 23%;
+            border : 1px solid rgba(0, 0, 0, 0.219);
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 1.5%;
+        }
+        .b1_topbox{
+            height : 25px;
+            width : 25%;
+            border : 2px solid rgb(209,0,36);
+            margin-left: 70%;
+        }
+        .b1topbox_text{
+            color : rgb(209,0,36);
+            text-align: center;
+            margin-top: 2px;
+        }
+        .b1_image{
+            height : 200px;
+            width : 92%;
+            /* border : 1px solid; */
+            margin: auto;
+            margin-top: 10px;
+        }
+        .b1image1{
+            height : 100%;
+            width : 100%
+        }
+        .b1_content{
+            height : 100px;
+            width : 92%;
+            border-bottom : 1px solid rgba(0, 0, 0, 0.397);
+            margin: auto;
+            margin-top:90px;
+        }
+        .b1content_head1{
+            color : rgba(0, 0, 0, 0.356);
+            text-align: center;
+        }
+        .b1content_head2{
+            text-align: center;
+            font-weight: 1000;
+            margin-top: 10px;
+        }
+        .b1content_twoheads{
+            height : 30px;
+            width : 70%;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin: auto;
+            margin-top: 10px;
+        }
+        .b1contenttwoheads_1{
+            color :rgb(209, 0, 36);
+            display: inline;
+            /* vertical-align: top; */
+            margin-left: 10px;
+        }
+        .b1contenttwoheads_2{
+            color :  rgba(0, 0, 0, 0.301);
+            display: inline;
+            /* vertical-align: top; */
+            margin-top: 5px;
+            text-decoration: line-through;
+        }
+        .b1_icons{
+            height : 30px;
+            width : 50%;
+            /* border : 1px solid; */
+            margin: auto;
+            margin-top: 30px;
+        }
+        .b1icons_1{
+            height : 100%;
+            width : 30%;
+            /* border : 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .b1icons_2{
+            height : 100%;
+            width : 30%;
+            /* border : 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .b1icons_3{
+            height : 100%;
+            width : 30%;
+            /* border : 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .b2_topbox{
+            height : 25px;
+            width : 25%;
+            border : 2px solid rgb(209,0,36);
+            margin-left: 70%;
+        }
+        .b2_image{
+            height : 200px;
+            width : 92%;
+            /* border : 1px solid; */
+            margin: auto;
+            margin-top: 36px;
+        }
+        .b2_content{
+            height : 100px;
+            width : 92%;
+            border-bottom : 1px solid rgba(0, 0, 0, 0.24);
+            margin: auto;
+            margin-top:90px;
+        }
+        .b2_stars{
+            height : 20px;
+            width : 40%;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin: auto;
+            margin-top: -10px;
+        }
+        .b2stars1{
+            height : 100%;
+            width : 15%;
+            /* border : 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .b2stars2{
+            height : 100%;
+            width : 15%;
+            /* border : 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .b2stars3{
+            height : 100%;
+            width : 15%;
+            /* border : 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .b2stars4{
+            height : 100%;
+            width : 15%;
+            /* border : 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .b2stars5{
+            height : 100%;
+            width : 15%;
+            /* border : 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .stars{
+            color :rgb(209, 0, 36);
+            font-size: 15px;
+        }
+        .b2_icons{
+            height : 30px;
+            width : 50%;
+            /* border : 1px solid; */
+            margin: auto;
+            margin-top: 20px;
+        }
+        .b3_image{
+            height : 200px;
+            width : 92%;
+            /* border : 1px solid; */
+            margin: auto;
+            margin-top: 36px;
+        }
+        .b3_content{
+            height : 100px;
+            width : 92%;
+            border-bottom : 1px solid rgba(0, 0, 0, 0.185);
+            margin: auto;
+            margin-top:90px;
+        }
+        .b4_topbox1{
+            height : 25px;
+            width : 25%;
+            border : 2px solid rgb(209,0,36);
+            margin-left: 40%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .b4topbox1_text{
+            color : rgb(209,0,36);
+            text-align: center;
+            margin-top: 2px;
+        }
+        .b4_topbox2{
+            height : 25px;
+            width : 25%;
+            background-color: rgb(209,0,36);
+            display: inline-block;
+            vertical-align: top;
+        }
+        .b4topbox2_text{
+            color : white;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .b4_image{
+            height : 200px;
+            width : 92%;
+            /* border : 1px solid; */
+            margin: auto;
+            margin-top: 10px;
+        }
+        .b4_content{
+            height : 100px;
+            width : 92%;
+            border-bottom : 1px solid rgba(0, 0, 0, 0.219);
+            margin: auto;
+            margin-top:90px;
+        }
+        .b5_image{
+            height : 200px;
+            width : 92%;
+            /* border : 1px solid; */
+            margin: auto;
+            margin-top: 36px;
+        }
+        .b5_content{
+            height : 100px;
+            width : 92%;
+            border-bottom : 1px solid rgba(0, 0, 0, 0.199);
+            margin: auto;
+            margin-top:90px;
+        }
+        /* ///////////////////////////////////// */
+        @media screen and (max-width : 1350px){
+            .sec1_topconleft{
+                width : 40%
+            }  
+            .sec1electrobox_midform{
+            
+            width :60%;
+        }
+        .midform_firstbox{
+            width : 25%
+        }
+        .sec1electroboxicons_box1{
+            /* margin-left: -5%; */
+            width : 40%;
+        }
+        .sec1nav_ul{
+            width : 70%
+        }
+        .sec1_maincontent{
+            width : 86%
+        } 
+        .sec1newproduct_head1{
+            width : 25%
+        }
+        .sec1_slider{
+            width : 90%
+        }
+        
+    }
+        
+    </style>
+</head>
+<body>
+    
+    <div class = "section1">
+        
+        <div class = "sec1_topcontent">
+            <div class = "sec1_topconleft">
+                <div class = "box1_icon"><i class="fa-solid fa-phone sec1_icons"></i></div>
+                <p class = "box1_para">+021-95-51-84</p>
+                    
+                    
+                <div class = "box1_icon2"><i class="fa-regular fa-envelope sec1_icons"></i></div>
+                <p class = "box1_para">email@email.com</p>
+                    
+                    
+                <div class = "box1_icon3"><i class="fa-solid fa-location-dot sec1_icons"></i></div>
+                <p class = "box1_para">1734 Stonecoal Road</p>
+            </div>
+        
+                <div class = "sec1topcon box4">
+                    <div class = "box4_icon"><i class="fa-solid fa-dollar-sign sec1_icon4"></i></div>
+                    <p class = "box4_para">USD</p>
+                    <div class = "box4_icon"><i class="fa-solid fa-cart-shopping sec1_icon4"></i></div>
+                    <p class = "box4_para">My Account</p>
+                </div>
+        </div>
+        
+        <div class = "sec1_electrobox">
+            <div class = "sec1electrobox_logo">
+                 <img src="./images/logo.png" alt="">
+            </div>
+            <div class = "sec1electrobox_midform">
+                <select class = "midform_firstbox">
+                    <option value="">All Categories</option>
+                    <option value="">Category 1</option>
+                    <option value="">Category 2</option>
+                </select>
+                <form action=""> 
+                    <input class = "form1" type="text" placeholder = "Search Here">
+                </form>
+                <button class = "midform_btn">Search</button>
+            </div>
+            <div class = "sec1electrobox_icons">
+                <div class = "sec1electroboxicons_box1">
+                    <div class = "sec1electroboxicons_icon1"><i class="fa-regular fa-heart heart"></i></div>
+                    <h4 class = "sec1electroboxicons_head1">Your Wishlist</h4>
+                </div>
+                <div class = "sec1electroboxicons_box2">
+                    <div class = "sec1electroboxicons_icon2"><i class="fa-solid fa-cart-shopping heart"></i></div>
+                    <h4 class = "sec1electroboxicons_head2">Your Cart</h4>
+                </div>
+            </div>
+        </div>
+        <nav class = "sec1_navbar">
+            <ul class = "sec1nav_ul">
+                <li class = "list">Home
+                    <div class = "list_underline"></div>
+                </li>
+                <li class = "list">Hot Deals
+                    <div class = "list_underline1"></div>
+                </li>
+                <li class = "list">Categories
+                    <div class = "list_underline1"></div>
+                </li>
+                <li class = "list">Laptops
+                    <div class = "list_underline1"></div>
+                </li>
+                <li class = "list">Smartphones
+                    <div class = "list_underline1"></div>
+                </li>
+                <li class = "list">Camera
+                    <div class = "list_underline1"></div>
+                </li>
+                <li class = "list">Accessories
+                    <div class = "list_underline1"></div>
+                 </li>
+            </ul>
+        </nav>
+        <div class = "sec1_maincontent">
+            <div class = "sec1maincontent_boxes a1">
+                <img class ="img1" src="./images/shop01.png" alt="">
+                <div class = "a1_name">
+                    <h2 class = "a1name_text1">Laptop <br>Collection</h2>
+                    <h5 class = "a1name_text2">SHOP NOW</h5> 
+                    <div class = "a1nametext2_icon"><i class="fa-solid fa-arrow-right arrow"></i></div>
+                </div>
+            </div>
+            <div class = "sec1maincontent_boxes a2">
+                <img class ="img1" src="./images/shop02.png" alt="">
+                <div class = "a1_name">
+                    <h2 class = "a1name_text1">Accessories <br>Collection</h2>
+                    <h5 class = "a1name_text2">SHOP NOW</h5> 
+                    <div class = "a1nametext2_icon"><i class="fa-solid fa-arrow-right arrow"></i></div>
+                </div>
+            </div>
+            <div class = "sec1maincontent_boxes a3">
+                <img class ="img1" src="./images/shop03.png" alt="">
+                <div class = "a1_name">
+                    <h2 class = "a1name_text1">Camera <br>Collection</h2>
+                    <h5 class = "a1name_text2">SHOP NOW</h5> 
+                    <div class = "a1nametext2_icon"><i class="fa-solid fa-arrow-right arrow"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class = "sec1_newproduct">
+            <div class = "sec1newproduct_head1">
+                <h2 class = "sec1newproducthead1_text">NEW PRODUCTS</h2>
+            </div>
+            <div class = "sec1newproduct_head2">
+                <h3 class = "sec1newproducthead2_text1">Laptops
+                    <div class = "newlist_line1"></div>
+                </h3>
+                <h3 class = "sec1newproducthead2_text2">Smartphones
+                    <div class = "newlist_line2"></div>
+                </h3>
+                <h3 class = "sec1newproducthead2_text3">Cameras
+                    <div class = "newlist_line3"></div>
+                </h3>
+                <h3 class = "sec1newproducthead2_text4">Accessories
+                    <div class = "newlist_line4"></div>
+                </h3>
+            </div>
+        </div>
+        <div class = "sec1_slider">
+            <div class = "sec1_sliderbox">
+                <div class = "sec1sliderbox slide1">
+                    <div class = "sec1sliderbox_info b1">
+                        <div class = "b1_topbox">
+                            <h4 class = "b1topbox_text">-30%</h4>
+                        </div>
+                        <div class = "b1_image">
+                            <img class = "b1image1" src="./images/product03.png" alt="">
+                        </div>
+                        <div class = "b1_content">
+                            <h4 class = "b1content_head1">Category</h4>
+                            <h5 class = "b1content_head2">PRODUCT NAME GOES HERE</h5>
+                            <div class = "b1content_twoheads">
+                                <h3 class = "b1contenttwoheads_1">$980.00</h3>
+                                <h4 class = "b1contenttwoheads_2">$990.00</h4>
+                            </div>
+                        </div>
+                        <div class = "b1_icons">
+                            <div class = "b1icons_1"><i class="fa-regular fa-heart"></i></div>
+                            <div class = "b1icons_2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                            <div class = "b1icons_3"><i class="fa-regular fa-eye"></i></div>
+                        </div>
+                    </div>
+                    <div class = "sec1sliderbox_info b2">
+                        <!-- <div class = "b2_topbox"></div> -->
+                        <div class = "b2_image">
+                            <img class = "b1image1" src="./images/product04.png" alt="">
+                        </div>
+                        <div class = "b2_content">
+                            <h4 class = "b1content_head1">Category</h4>
+                            <h5 class = "b1content_head2">PRODUCT NAME GOES HERE</h5>
+                            <div class = "b1content_twoheads">
+                                <h3 class = "b1contenttwoheads_1">$980.00</h3>
+                                <h4 class = "b1contenttwoheads_2">$990.00</h4>
+                            </div>
+                        </div>
+                        <div class = "b2_stars">
+                            <div class = "b2stars1"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars2"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars3"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars4"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars5"><i class="fa-solid fa-star stars"></i></div>
+                        </div>
+                        <div class = "b2_icons">
+                            <div class = "b1icons_1"><i class="fa-regular fa-heart"></i></div>
+                            <div class = "b1icons_2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                            <div class = "b1icons_3"><i class="fa-regular fa-eye"></i></div>
+                        </div>
+                    </div>
+                    <div class = "sec1sliderbox_info b3">
+                        <!-- <div class = "b2_topbox"></div> -->
+                        <div class = "b3_image">
+                            <img class = "b1image1" src="./images/product05.png" alt="">
+                        </div>
+                        <div class = "b3_content">
+                            <h4 class = "b1content_head1">Category</h4>
+                            <h5 class = "b1content_head2">PRODUCT NAME GOES HERE</h5>
+                            <div class = "b1content_twoheads">
+                                <h3 class = "b1contenttwoheads_1">$980.00</h3>
+                                <h4 class = "b1contenttwoheads_2">$990.00</h4>
+                            </div>
+                        </div>
+                        <div class = "b2_stars">
+                            <div class = "b2stars1"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars2"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars3"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars4"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars5"><i class="fa-solid fa-star stars"></i></div>
+                        </div>
+                        <div class = "b2_icons">
+                            <div class = "b1icons_1"><i class="fa-regular fa-heart"></i></div>
+                            <div class = "b1icons_2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                            <div class = "b1icons_3"><i class="fa-regular fa-eye"></i></div>
+                        </div>
+                    </div>
+                    <div class = "sec1sliderbox_info b4">
+                        <div class = "b4_topbox1">
+                            <h4 class = "b4topbox1_text">-30%</h4>
+                            
+                        </div>
+                        <div class = "b4_topbox2">
+                            <h4 class = "b4topbox2_text">New</h4>
+                        </div>
+                        <div class = "b4_image">
+                            <img class = "b1image1" src="./images/product03.png" alt="">
+                        </div>
+                        <div class = "b4_content">
+                            <h4 class = "b1content_head1">Category</h4>
+                            <h5 class = "b1content_head2">PRODUCT NAME GOES HERE</h5>
+                            <div class = "b1content_twoheads">
+                                <h3 class = "b1contenttwoheads_1">$980.00</h3>
+                                <h4 class = "b1contenttwoheads_2">$990.00</h4>
+                            </div>
+                        </div>
+                        <div class = "b2_stars">
+                            <div class = "b2stars1"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars2"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars3"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars4"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars5"><i class="fa-solid fa-star stars"></i></div>
+                        </div>
+                        <div class = "b2_icons">
+                            <div class = "b1icons_1"><i class="fa-regular fa-heart"></i></div>
+                            <div class = "b1icons_2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                            <div class = "b1icons_3"><i class="fa-regular fa-eye"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "sec1sliderbox slide2">
+                    <div class = "sec1sliderbox_info b5">
+                        <!-- <div class = "b2_topbox"></div> -->
+                        <div class = "b5_image">
+                            <img class = "b1image1" src="./images/product02.png" alt="">
+                        </div>
+                        <div class = "b5_content">
+                            <h4 class = "b1content_head1">Category</h4>
+                            <h5 class = "b1content_head2">PRODUCT NAME GOES HERE</h5>
+                            <div class = "b1content_twoheads">
+                                <h3 class = "b1contenttwoheads_1">$980.00</h3>
+                                <h4 class = "b1contenttwoheads_2">$990.00</h4>
+                            </div>
+                        </div>
+                        <div class = "b2_stars">
+                            <div class = "b2stars1"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars2"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars3"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars4"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars5"><i class="fa-regular fa-star stars"></i></div>
+                        </div>
+                        <div class = "b2_icons">
+                            <div class = "b1icons_1"><i class="fa-regular fa-heart"></i></div>
+                            <div class = "b1icons_2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                            <div class = "b1icons_3"><i class="fa-regular fa-eye"></i></div>
+                        </div>
+                    </div>
+                    <div class = "sec1sliderbox_info b6">
+                        <div class = "b1_topbox">
+                            <h4 class = "b1topbox_text">-30%</h4>
+                        </div>
+                        <div class = "b1_image">
+                            <img class = "b1image1" src="./images/product03.png" alt="">
+                        </div>
+                        <div class = "b1_content">
+                            <h4 class = "b1content_head1">Category</h4>
+                            <h5 class = "b1content_head2">PRODUCT NAME GOES HERE</h5>
+                            <div class = "b1content_twoheads">
+                                <h3 class = "b1contenttwoheads_1">$980.00</h3>
+                                <h4 class = "b1contenttwoheads_2">$990.00</h4>
+                            </div>
+                        </div>
+                        <div class = "b1_icons">
+                            <div class = "b1icons_1"><i class="fa-regular fa-heart"></i></div>
+                            <div class = "b1icons_2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                            <div class = "b1icons_3"><i class="fa-regular fa-eye"></i></div>
+                        </div>
+                    </div>
+                    <div class = "sec1sliderbox_info b7">
+                        <!-- <div class = "b2_topbox"></div> -->
+                        <div class = "b2_image">
+                            <img class = "b1image1" src="./images/product04.png" alt="">
+                        </div>
+                        <div class = "b2_content">
+                            <h4 class = "b1content_head1">Category</h4>
+                            <h5 class = "b1content_head2">PRODUCT NAME GOES HERE</h5>
+                            <div class = "b1content_twoheads">
+                                <h3 class = "b1contenttwoheads_1">$980.00</h3>
+                                <h4 class = "b1contenttwoheads_2">$990.00</h4>
+                            </div>
+                        </div>
+                        <div class = "b2_stars">
+                            <div class = "b2stars1"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars2"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars3"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars4"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars5"><i class="fa-solid fa-star stars"></i></div>
+                        </div>
+                        <div class = "b2_icons">
+                            <div class = "b1icons_1"><i class="fa-regular fa-heart"></i></div>
+                            <div class = "b1icons_2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                            <div class = "b1icons_3"><i class="fa-regular fa-eye"></i></div>
+                        </div>
+                    </div>
+                    <div class = "sec1sliderbox_info b8">
+                        <!-- <div class = "b2_topbox"></div> -->
+                        <div class = "b3_image">
+                            <img class = "b1image1" src="./images/product05.png" alt="">
+                        </div>
+                        <div class = "b3_content">
+                            <h4 class = "b1content_head1">Category</h4>
+                            <h5 class = "b1content_head2">PRODUCT NAME GOES HERE</h5>
+                            <div class = "b1content_twoheads">
+                                <h3 class = "b1contenttwoheads_1">$980.00</h3>
+                                <h4 class = "b1contenttwoheads_2">$990.00</h4>
+                            </div>
+                        </div>
+                        <div class = "b2_stars">
+                            <div class = "b2stars1"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars2"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars3"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars4"><i class="fa-solid fa-star stars"></i></div>
+                            <div class = "b2stars5"><i class="fa-solid fa-star stars"></i></div>
+                        </div>
+                        <div class = "b2_icons">
+                            <div class = "b1icons_1"><i class="fa-regular fa-heart"></i></div>
+                            <div class = "b1icons_2"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                            <div class = "b1icons_3"><i class="fa-regular fa-eye"></i></div>
+                        </div>
+                    </div>
+                </div>
+    
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
